@@ -78,6 +78,90 @@ Environment and Secrets
 	- `firebase deploy --only functions`
 	- `firebase deploy --only firestore:rules`
 
-## Apk file
-Latest release: https://github.com/afnanbintenam-spec/SAFELINK_NSTU/releases/latest
-All releases: https://github.com/afnanbintenam-spec/SAFELINK_NSTU/releases
+## APK Download & Installation
+
+### Download APK
+1. Go to releases page: https://github.com/afnanbintenam-spec/SAFELINK_NSTU/releases
+2. Download the latest APK file matching your device:
+   - **arm64-v8a** (recommended for most modern devices)
+   - **armeabi-v7a** (older Android devices)
+   - **x86_64** (emulators, tablets)
+
+### Install APK on Android Device
+1. Enable "Unknown Sources" on your phone:
+   - Settings → Security → Allow installation from unknown sources
+2. Transfer the APK file to your phone
+3. Open the APK file and tap "Install"
+4. Wait for installation to complete
+
+## How to Use SafeLink NSTU
+
+### Initial Setup
+1. **Launch the app** after installation
+2. **Sign up/Login**
+   - Provide your email and create a password
+   - Verify your email address
+3. **Complete profile setup**
+   - Enter your name, student ID (if applicable)
+   - Select your role: Student, Proctor, or Security Staff
+4. **Set up optional features**
+   - Set Pulse: Mark your frequent locations (building/floor) for faster SOS context
+   - Enable shake-detection or volume button triggers (optional)
+
+### For Students: Triggering SOS Alert
+1. **Emergency situation?** Single tap the large **SOS button** on home screen
+2. **Instant actions triggered:**
+   - Your live location is captured
+   - Alert sent to nearby proctors and security staff
+   - Your emergency contact details shared
+3. **Share live location** - System continuously updates your location until alert resolved
+4. **Cancel alert** - Tap "Cancel SOS" when situation is resolved
+5. **Volume button shortcut** - Press volume buttons simultaneously for quick SOS (if enabled)
+
+### For Proctors/Security Staff: Managing Alerts
+1. **View all active alerts** on dashboard
+2. **Alert details include:**
+   - Student location on map
+   - Alert type and severity
+   - Student contact information
+3. **Actions available:**
+   - Accept/Acknowledge the alert
+   - View student location on map
+   - Contact student directly (call/SMS)
+   - Mark alert as resolved
+4. **Escalation support** - Automatic SMS/call to additional contacts if needed
+
+### Key Features
+- **One-Tap SOS**: Emergency activation with single button press
+- **Live Location Tracking**: Real-time location updates for responders
+- **Set Pulse**: Pre-marked safe zones and building details for faster response
+- **Shake Detection**: Activate SOS by shaking (optional)
+- **Volume Button Trigger**: Hands-free SOS using physical buttons
+- **Role-Based Views**: Different dashboards for students, proctors, and security
+- **Multi-Contact Escalation**: SMS and call alerts to multiple responders
+- **Map Integration**: Visual location tracking for emergency response
+
+### Troubleshooting
+
+**App won't open:**
+- Uninstall and reinstall the APK
+- Check storage space on your device
+- Ensure minimum Android version: 5.0+
+
+**Location not updating:**
+- Enable GPS on your device
+- Grant location permissions in app settings
+- Check app has background permission enabled
+
+**Not receiving alerts:**
+- Ensure Firebase Messaging permissions are enabled
+- Check internet connection (WiFi or mobile data)
+- Restart the app
+
+**Can't log in:**
+- Verify internet connection
+- Reset password via "Forgot Password"
+- Contact your administrator
+
+### Support & Feedback
+For issues or feature requests, contact NSTU Safety Team or open an issue on GitHub: https://github.com/afnanbintenam-spec/SAFELINK_NSTU/issues
