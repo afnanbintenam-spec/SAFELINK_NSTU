@@ -79,4 +79,5 @@ Environment and Secrets
 	- `firebase deploy --only firestore:rules`
 
 ## Apk file
-Download link: https://github.com/afnanbintenam-spec/SAFELINK_NSTU/releases
+Latest release: https://github.com/afnanbintenam-spec/SAFELINK_NSTU/releases/latest
+All releases: https://github.com/afnanbintenam-spec/SAFELINK_NSTU/releases
